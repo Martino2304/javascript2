@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="practica2.js"></script>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+            <legend> Convertir Grados Centigrados A Grados Fahrenheint </legend>
+            <label for="centigrados">Centigrados</label>
+            <input type="text" id="centigrados" name="Centigrados"  value="0" >
+            <br>
+            <br>
+            
+            <h3 id="fa"></h3>
+            <input  type="button" name="btnCalcular" value="Convertir" onclick="convertirGradosCentigradosAGradosFahrenheint()">
+            <span id="res"></span>
+        
+        </fieldset>
+            <br>
+            <br>
+        <fieldset>
+            <legend>calcularPorcentajes </legend>
+            <label for="numero">Ingrese el numero </label>
+            <input type="text" name="Numero" id="numero" value="0">
+             <br><br>
+            <span id="r"></span>
+         
+            <input  type="button" name="btnCalcular" value="Porcentaje" onclick=" calcularPorcentajes()">
+        </fieldset>
+            <br>
+            <br>
+        <fieldset>
+            <legend>Generar tabla</legend>
+            <label for="filas" >ingrese filas</label>
+            <input type="number" min="1" id="f" name="filas" value="1">
+            <br>
+            <br>
+            <label for="columnas" >ingrese columnas</label>
+            <input type="number" min="1" name="columnas" id="c" value="1">
+            <br><br>
+        
+            <input type="button" value="generar tabla" name="btnCalcular" onclick="generarTablaHTML()">
+        
+
+        <div id="cot"> </div>
+
+        </fieldset>
+        </form>
+
+</body>
+</html>
